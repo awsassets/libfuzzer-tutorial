@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 LIBPYTHON_PATH=cpython/libpython3.9.a
 cd $(dirname $0)
