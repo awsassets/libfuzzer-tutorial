@@ -1,9 +1,13 @@
 FROM ubuntu:18.04
 
 ENV user fuzz
+ENV DEBIAN_FRONTEND=noninteractive 
 
+RUN echo "deb-src http://archive.ubuntu.com/ubuntu/ bionic main" >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y git build-essential clang zlib1g
+RUN apt-get build-dep -y python3.6
+RUN apt-get install -y build-essential clang
+
 RUN adduser $user
 ADD ./build.sh /home/$user/build.sh
 ADD ./run.sh /home/$user/run.sh
