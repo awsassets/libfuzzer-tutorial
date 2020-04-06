@@ -10,4 +10,5 @@ cd libfuzzer-tutorial
 ```
 
 # Dependencies
-`sudo apt install llvm python3`
+You must have **sudo**, because the fuzzer runs in a docker container.
+Obviously, you also need docker, whose installation steps are outlined [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
