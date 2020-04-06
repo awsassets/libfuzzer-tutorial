@@ -4,8 +4,9 @@ It turns out marshal.load is shit in the aspect of security.
 
 # How to run?
 ```bash
-./build.sh
-./run.sh
+git clone --recurse-submodules git@github.com:pr0cf5/libfuzzer-tutorial.git
+cd libfuzzer-tutorial
+./run_docker.sh
 ```
 
 # Dependencies
